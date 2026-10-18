@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esha Rehman | Full-Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Header Animation */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #334155;
+            animation: slideDown 1s ease-out forwards;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        .contact-info a {
+            color: #e2e8f0;
+            text-decoration: none;
+            background: #1e293b;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+        }
+        .contact-info a:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            transform: translateY(-3px);
+        }
+
+        /* Sections & Scroll Animation */
+        section {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .about-text {
+            font-size: 1rem;
+            color: #cbd5e1;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #0f172a;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+        .skill-tag:hover {
+            transform: translateY(-5px) scale(1.05);
+            border-color: #38bdf8;
+            color: #38bdf8;
+        }
+
+        /* Projects & Experience Cards */
+        .project-card, .exp-card {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #0f172a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover, .exp-card:hover {
+            transform: translateX(10px);
+            box-shadow: -5px 5px 15px rgba(56, 189, 248, 0.1);
+            border-left: 3px solid #38bdf8;
+        }
+        .project-title, .exp-title {
+            font-size: 1.2rem;
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+        .project-tech, .exp-date {
+            font-size: 0.85rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .project-desc {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            padding-left: 20px;
+        }
+        .project-desc li {
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes for Header */
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .contact-info { flex-direction: column; align-items: center; gap: 10px; }
+            .project-card:hover, .exp-card:hover { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Esha Rehman</h1>
+        <h2>Junior Full-Stack Web Developer | Computer Science Graduate</h2>
+        <div class="contact-info">
+            <a href="mailto:esharehman707@gmail.com">📧 esharehman707@gmail.com</a>
+            <a href="tel:+923090503327">📱 +92 309 0503327</a>
+            <a href="#">📍 Multan, Pakistan</a>
+        </div>
+    </header>
+
+    <section class="scroll-anim">
+        <h3>Professional Summary</h3>
+        <p class="about-text">
+            Computer Science graduate (BSCS, 2026) with hands-on experience in full-stack web development (PHP, MySQL, JavaScript), WordPress, and Python. Built an Online Assessment Platform as a final year project and a Python desktop tool that cleans and deduplicates 2 million+ records during an IT internship at MEPCO. Also experienced in graphic design and technical documentation. Seeking a junior developer role where I can build user-centric solutions and keep growing.
+        </p>
+    </section>
+
+    <section class="scroll-anim">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Tkinter</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Canva</span>
+        </div>
+    </section>
+
+    <section class="scroll-anim">
+        <h3>Projects</h3>
+        
+        <div class="project-card">
+            <div class="project-title">Online Assessment Platform (Final Year Project)</div>
+            <div class="project-tech">PHP, MySQL, HTML, CSS, JavaScript</div>
+            <ul class="project-desc">
+                <li>Built a web-based platform for continuous learning assessment with automated feedback and performance analytics.</li>
+                <li>Designed a role-based system: teachers create quizzes; students attempt quizzes and view results.</li>
+                <li>Implemented an interactive dashboard that visualizes student progress and tracks improvement.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Document Q&A Chatbot</div>
+            <div class="project-tech">Python, Retrieval-Augmented Generation (RAG)</div>
+            <ul class="project-desc">
+                <li>Developed a chatbot that lets users ask natural-language questions about PDF documents and get answers using RAG.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">MEPCO App Cleaner (Internship Project)</div>
+            <div class="project-tech">Python, Pandas, Tkinter, PyInstaller</div>
+            <ul class="project-desc">
+                <li>Developed a portable desktop application to clean and deduplicate large FBR tax data across multiple Excel sheets.</li>
+                <li>Processed 2 million+ records (10+ sheets) using background threading so the interface never freezes.</li>
+                <li>Packaged as a standalone .exe with PyInstaller so non-technical staff can run it easily.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="scroll-anim">
+        <h3>Work Experience</h3>
+        
+        <div class="exp-card">
+            <div class="exp-title">IT Intern</div>
+            <div class="exp-date">MEPCO (Multan Electric Power Company) | Jul 2026 – Aug 2026</div>
+            <ul class="project-desc">
+                <li>Built MEPCO App Cleaner, a Python tool that deduplicates and cleans large datasets (2 million+ records).</li>
+                <li>Verified and updated consumer records in the billing database.</li>
+                <li>Troubleshot hardware and network issues for internal systems, reducing downtime.</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-title">Web Development & Graphic Design Intern</div>
+            <div class="exp-date">ATALI Realty Builders & Properties | Aug 2025 – Sep 2025</div>
+            <ul class="project-desc">
+                <li>Customized WordPress websites to match client requirements.</li>
+                <li>Worked with the development team to design and implement responsive user interfaces.</li>
+                <li>Designed marketing materials in Photoshop and Canva to improve brand visibility.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="scroll-anim">
+        <h3>Education</h3>
+        <div class="exp-card">
+            <div class="exp-title">Bachelor of Science in Computer Science (BSCS)</div>
+            <div class="exp-date">University of Southern Punjab (USP), Multan | 2023 – 2026</div>
+        </div>
+        <div class="exp-card">
+            <div class="exp-title">Associate Degree in Sciences (ADS)</div>
+            <div class="exp-date">Govt. Degree College Kacha Khuh | 2020 – 2022</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Esha Rehman. Built with ❤️</p>
+    </footer>
+</div>
+
+<!-- JavaScript for Scroll Animation -->
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.scroll-anim');
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
+</body>
+</html>
