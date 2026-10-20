@@ -1,303 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esha Rehman | Full-Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            background-color: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        /* Header Animation */
-        header {
-            text-align: center;
-            padding: 60px 0;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            border-radius: 20px;
-            margin-bottom: 40px;
-            border: 1px solid #334155;
-            animation: slideDown 1s ease-out forwards;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #38bdf8;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 0.9rem;
-        }
-        .contact-info a {
-            color: #e2e8f0;
-            text-decoration: none;
-            background: #1e293b;
-            padding: 8px 16px;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            border: 1px solid #334155;
-        }
-        .contact-info a:hover {
-            background: #38bdf8;
-            color: #0f172a;
-            transform: translateY(-3px);
-        }
-
-        /* Sections & Scroll Animation */
-        section {
-            background: #1e293b;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border: 1px solid #334155;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s ease-out;
-        }
-        section.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: #38bdf8;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #334155;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
-        .about-text {
-            font-size: 1rem;
-            color: #cbd5e1;
-        }
-        
-        /* Skills */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-tag {
-            background: #0f172a;
-            padding: 8px 15px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            border: 1px solid #334155;
-            transition: all 0.3s ease;
-            cursor: default;
-        }
-        .skill-tag:hover {
-            transform: translateY(-5px) scale(1.05);
-            border-color: #38bdf8;
-            color: #38bdf8;
-        }
-
-        /* Projects & Experience Cards */
-        .project-card, .exp-card {
-            margin-bottom: 25px;
-            padding: 15px;
-            border-radius: 10px;
-            background: #0f172a;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project-card:hover, .exp-card:hover {
-            transform: translateX(10px);
-            box-shadow: -5px 5px 15px rgba(56, 189, 248, 0.1);
-            border-left: 3px solid #38bdf8;
-        }
-        .project-title, .exp-title {
-            font-size: 1.2rem;
-            color: #e2e8f0;
-            font-weight: 600;
-        }
-        .project-tech, .exp-date {
-            font-size: 0.85rem;
-            color: #38bdf8;
-            margin-bottom: 10px;
-            font-style: italic;
-        }
-        .project-desc {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            padding-left: 20px;
-        }
-        .project-desc li {
-            margin-bottom: 5px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-
-        /* Keyframes for Header */
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            .contact-info { flex-direction: column; align-items: center; gap: 10px; }
-            .project-card:hover, .exp-card:hover { transform: translateY(-5px); }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esha Rehman | Full-Stack Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1220;--card:#131c2e;--text:#e6edf7;--muted:#93a1b8;--accent:#38bdf8;--accent2:#a78bfa;--border:#22304a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f7fb;--card:#fff;--text:#0f172a;--muted:#55627a;--accent:#0284c7;--accent2:#7c3aed;--border:#dbe3ef}}
+:root[data-theme="light"]{--bg:#f4f7fb;--card:#fff;--text:#0f172a;--muted:#55627a;--accent:#0284c7;--accent2:#7c3aed;--border:#dbe3ef}
+:root[data-theme="dark"]{--bg:#0b1220;--card:#131c2e;--text:#e6edf7;--muted:#93a1b8;--accent:#38bdf8;--accent2:#a78bfa;--border:#22304a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:Poppins,system-ui,sans-serif;line-height:1.7}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav b{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:1.2rem}
+nav ul{display:flex;gap:22px;list-style:none;padding:0}
+nav a{color:var(--muted);text-decoration:none;font-size:.9rem}nav a:hover{color:var(--accent)}
+#theme{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:50%;width:36px;height:36px;cursor:pointer}
+@media(max-width:800px){nav ul{display:none}}
+section{max-width:1050px;margin:auto;padding:80px 5%}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.hero::before{content:"";position:absolute;inset:10% 10%;background:radial-gradient(circle at 30% 30%,var(--accent),transparent 50%),radial-gradient(circle at 70% 60%,var(--accent2),transparent 50%);opacity:.18;filter:blur(60px);z-index:-1;animation:float 8s ease-in-out infinite alternate}
+@keyframes float{to{transform:translateY(30px) scale(1.08)}}
+.hi{color:var(--accent);font-weight:500}
+h1{font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.15;margin:8px 0}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.typing{font-size:clamp(1.1rem,3vw,1.5rem);color:var(--muted);min-height:2em}
+.typing::after{content:"|";animation:blink 1s infinite;color:var(--accent)}
+@keyframes blink{50%{opacity:0}}
+.btns{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;justify-content:center}
+.btn{padding:12px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--accent);color:var(--accent);transition:.25s}
+.btn.p{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;border:0}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(56,189,248,.25)}
+h2{font-size:1.9rem;margin-bottom:28px}h2::after{content:"";display:block;width:60px;height:4px;border-radius:4px;margin-top:8px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.stats .card{text-align:center;padding:18px}.stats strong{display:block;font-size:1.7rem;color:var(--accent)}.stats small{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tags span{font-size:.78rem;padding:4px 12px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.card h3{margin-bottom:6px;font-size:1.1rem}.card p{color:var(--muted);font-size:.93rem}
+.card ul{padding-left:18px;color:var(--muted);font-size:.92rem}.card li{margin-bottom:6px}
+.meta{color:var(--accent);font-size:.85rem;font-weight:500;margin-bottom:10px}
+.tl{border-left:2px solid var(--border);padding-left:22px}.tl .card{margin-bottom:18px}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--accent)}
+button.btn{cursor:pointer;font-family:inherit}
+footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid var(--border);font-size:.85rem}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}.reveal.show{opacity:1;transform:none}
+</style>
 </head>
 <body>
+<nav><b>Esha.dev</b>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul>
+<button id="theme" aria-label="Toggle theme">◐</button></nav>
 
-<div class="container">
-    <header>
-        <h1>Esha Rehman</h1>
-        <h2>Junior Full-Stack Web Developer | Computer Science Graduate</h2>
-        <div class="contact-info">
-            <a href="mailto:esharehman707@gmail.com">📧 esharehman707@gmail.com</a>
-            <a href="tel:+923090503327">📱 +92 309 0503327</a>
-            <a href="#">📍 Multan, Pakistan</a>
-        </div>
-    </header>
+<section class="hero">
+<p class="hi">Hello, I’m</p>
+<h1><span>Esha Rehman</span></h1>
+<p class="typing" id="typing"></p>
+<div class="btns"><a class="btn p" href="#projects">View My Work</a><a class="btn" href="#contact">Hire Me</a></div>
+</section>
 
-    <section class="scroll-anim">
-        <h3>Professional Summary</h3>
-        <p class="about-text">
-            Computer Science graduate (BSCS, 2026) with hands-on experience in full-stack web development (PHP, MySQL, JavaScript), WordPress, and Python. Built an Online Assessment Platform as a final year project and a Python desktop tool that cleans and deduplicates 2 million+ records during an IT internship at MEPCO. Also experienced in graphic design and technical documentation. Seeking a junior developer role where I can build user-centric solutions and keep growing.
-        </p>
-    </section>
+<section id="about" class="reveal">
+<h2>About Me</h2>
+<div class="card"><p>Computer Science graduate (BSCS, 2026) with hands-on experience in full-stack web development (PHP, MySQL, JavaScript), WordPress, and Python. Built an Online Assessment Platform as a final year project and a Python desktop tool that cleans and deduplicates 2 million+ records during an IT internship at MEPCO. Also experienced in graphic design and technical documentation. Seeking a junior developer role where I can build user-centric solutions and keep growing.</p></div>
+<div class="stats"><div class="card"><strong data-n="2">0</strong><small>Million+ records cleaned</small></div><div class="card"><strong data-n="3">0</strong><small>Major projects</small></div><div class="card"><strong data-n="2">0</strong><small>Internships completed</small></div></div>
+</section>
 
-    <section class="scroll-anim">
-        <h3>Technical Skills</h3>
-        <div class="skills-grid">
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">WordPress</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">Tkinter</span>
-            <span class="skill-tag">RAG</span>
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">Canva</span>
-        </div>
-    </section>
-
-    <section class="scroll-anim">
-        <h3>Projects</h3>
-        
-        <div class="project-card">
-            <div class="project-title">Online Assessment Platform (Final Year Project)</div>
-            <div class="project-tech">PHP, MySQL, HTML, CSS, JavaScript</div>
-            <ul class="project-desc">
-                <li>Built a web-based platform for continuous learning assessment with automated feedback and performance analytics.</li>
-                <li>Designed a role-based system: teachers create quizzes; students attempt quizzes and view results.</li>
-                <li>Implemented an interactive dashboard that visualizes student progress and tracks improvement.</li>
-            </ul>
-        </div>
-
-        <div class="project-card">
-            <div class="project-title">Document Q&A Chatbot</div>
-            <div class="project-tech">Python, Retrieval-Augmented Generation (RAG)</div>
-            <ul class="project-desc">
-                <li>Developed a chatbot that lets users ask natural-language questions about PDF documents and get answers using RAG.</li>
-            </ul>
-        </div>
-
-        <div class="project-card">
-            <div class="project-title">MEPCO App Cleaner (Internship Project)</div>
-            <div class="project-tech">Python, Pandas, Tkinter, PyInstaller</div>
-            <ul class="project-desc">
-                <li>Developed a portable desktop application to clean and deduplicate large FBR tax data across multiple Excel sheets.</li>
-                <li>Processed 2 million+ records (10+ sheets) using background threading so the interface never freezes.</li>
-                <li>Packaged as a standalone .exe with PyInstaller so non-technical staff can run it easily.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="scroll-anim">
-        <h3>Work Experience</h3>
-        
-        <div class="exp-card">
-            <div class="exp-title">IT Intern</div>
-            <div class="exp-date">MEPCO (Multan Electric Power Company) | Jul 2026 – Aug 2026</div>
-            <ul class="project-desc">
-                <li>Built MEPCO App Cleaner, a Python tool that deduplicates and cleans large datasets (2 million+ records).</li>
-                <li>Verified and updated consumer records in the billing database.</li>
-                <li>Troubleshot hardware and network issues for internal systems, reducing downtime.</li>
-            </ul>
-        </div>
-
-        <div class="exp-card">
-            <div class="exp-title">Web Development & Graphic Design Intern</div>
-            <div class="exp-date">ATALI Realty Builders & Properties | Aug 2025 – Sep 2025</div>
-            <ul class="project-desc">
-                <li>Customized WordPress websites to match client requirements.</li>
-                <li>Worked with the development team to design and implement responsive user interfaces.</li>
-                <li>Designed marketing materials in Photoshop and Canva to improve brand visibility.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="scroll-anim">
-        <h3>Education</h3>
-        <div class="exp-card">
-            <div class="exp-title">Bachelor of Science in Computer Science (BSCS)</div>
-            <div class="exp-date">University of Southern Punjab (USP), Multan | 2023 – 2026</div>
-        </div>
-        <div class="exp-card">
-            <div class="exp-title">Associate Degree in Sciences (ADS)</div>
-            <div class="exp-date">Govt. Degree College Kacha Khuh | 2020 – 2022</div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Esha Rehman. Built with ❤️</p>
-    </footer>
+<section id="skills" class="reveal">
+<h2>Technical Skills</h2>
+<div class="grid">
+<div class="card"><h3>Web Development</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>WordPress</span><span>Responsive Design</span></div></div>
+<div class="card"><h3>Programming &amp; Data</h3><div class="tags"><span>Python</span><span>Pandas</span><span>Tkinter</span><span>PyInstaller</span><span>RAG</span><span>CSV / MS Excel</span></div></div>
+<div class="card"><h3>Design &amp; Tools</h3><div class="tags"><span>Canva</span><span>Video Editing</span></div></div>
+<div class="card"><h3>Other</h3><div class="tags"><span>MS Office</span><span>Technical Documentation</span></div></div>
+<div class="card"><h3>Soft Skills</h3><div class="tags"><span>Team Collaboration</span><span>Communication</span><span>Quick Learner</span></div></div>
 </div>
+</section>
 
-<!-- JavaScript for Scroll Animation -->
+<section id="projects" class="reveal">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>Online Assessment Platform</h3><div class="meta">Final Year Project</div>
+<ul><li>Web-based platform for continuous learning assessment with automated feedback and performance analytics.</li><li>Role-based system: teachers create quizzes, students attempt them and view results.</li><li>Interactive dashboard that visualizes student progress, identifies weak areas, and tracks improvement over time.</li></ul>
+<div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+
+<div class="card"><h3>Document Q&amp;A Chatbot</h3><div class="meta">Personal Project</div>
+<ul><li>Chatbot that lets users ask natural-language questions about PDF documents and get answers using Retrieval-Augmented Generation (RAG).</li></ul>
+<div class="tags"><span>Python</span><span>RAG</span></div></div>
+
+<div class="card"><h3>MEPCO App Cleaner</h3><div class="meta">Internship Project</div>
+<ul><li>Portable desktop app to clean and deduplicate large FBR tax data across multiple Excel sheets.</li><li>Processed 2 million+ records (10+ sheets) using background threading so the interface never freezes.</li><li>Column-based dynamic filtering (Name, CNIC, NTN) to remove duplicates, with export of cleaned CSV files.</li><li>Packaged as a standalone .exe with PyInstaller so non-technical staff can run it from a USB drive.</li></ul>
+<div class="tags"><span>Python</span><span>Pandas</span><span>Tkinter</span><span>PyInstaller</span></div></div>
+</div>
+</section>
+
+<section id="experience" class="reveal">
+<h2>Work Experience</h2>
+<div class="tl">
+<div class="card"><h3>IT Intern</h3><div class="meta">MEPCO (Multan Electric Power Company), Multan | Jul 2026 – Aug 2026</div>
+<ul><li>Built MEPCO App Cleaner, a Python tool that deduplicates and cleans large consumer/tax datasets (2 million+ records) for non-technical staff.</li><li>Verified and updated consumer records in the billing database; created and maintained CSV files for accurate billing reports.</li><li>Troubleshot hardware and network issues for internal systems, helping reduce downtime.</li><li>Worked with senior engineers to resolve technical complaints from field staff.</li><li>Maintained daily technical logs and prepared summary reports for management.</li></ul></div>
+<div class="card"><h3>Web Development &amp; Graphic Design Intern</h3><div class="meta">ATALI Realty Builders &amp; Properties | Aug 2025 – Sep 2025</div>
+<ul><li>Customized WordPress websites to match client requirements.</li><li>Worked with the development team to design and implement responsive user interfaces.</li><li>Designed marketing materials and social media graphics to improve brand visibility.</li><li>Wrote technical documentation and instructional content for newly launched features.</li></ul></div>
+</div>
+</section>
+
+<section id="education" class="reveal">
+<h2>Education</h2>
+<div class="tl">
+<div class="card"><h3>Bachelor of Science in Computer Science (BSCS)</h3><div class="meta">University of Southern Punjab (USP), Multan | 2023 – 2026</div></div>
+<div class="card"><h3>Associate Degree in Sciences (ADS)</h3><div class="meta">Govt. Degree College Kacha Khuh | 2020 – 2022</div></div>
+<div class="card"><h3>Intermediate (Pre-Medical)</h3><div class="meta">Govt. Degree College Kacha Khuh | 2018 – 2020</div></div>
+</div>
+<div class="grid" style="margin-top:30px">
+<div class="card"><h3>Certifications</h3><ul><li>Internship Completion Certificate, MEPCO</li><li>Internship Completion Certificate, ATALI Realty Builders &amp; Properties</li><li>Certificate in Office Management</li><li>Certificate of Empowering Women Entrepreneurs</li></ul></div>
+<div class="card"><h3>Languages</h3><div class="tags"><span>English</span><span>Urdu</span></div></div>
+</div>
+</section>
+
+<section id="services" class="reveal">
+<h2>Services</h2>
+<div class="grid">
+<div class="card"><h3>Excel / CSV Cleaning with Python</h3><p>Duplicate removal, formatting and clean, analysis-ready data.</p></div>
+<div class="card"><h3>Logo &amp; Social Media Graphics</h3><p>Clean, professional visuals for your brand.</p></div>
+<div class="card"><h3>Websites &amp; WordPress</h3><p>Responsive, user-friendly websites for small businesses.</p></div>
+</div>
+<div class="btns" style="justify-content:flex-start"><a class="btn" href="https://www.fiverr.com/esharehman007" target="_blank" rel="noopener">See my Fiverr gigs</a></div>
+</section>
+
+<section id="contact" class="reveal">
+<h2>Get In Touch</h2>
+<div class="grid">
+<div class="card"><h3>Contact</h3><p>📧 esharehman707@gmail.com<br>📱 +92 309 0503327<br>📍 Multan, Pakistan</p></div>
+<form id="cf" class="card">
+<input id="nm" placeholder="Your name" required>
+<input id="em" type="email" placeholder="Your email" required>
+<textarea id="ms" rows="4" placeholder="Your message" required></textarea>
+<button class="btn p" type="submit">Send Message</button>
+</form>
+</div>
+</section>
+<footer>© 2026 Esha Rehman. Built with passion in Multan.</footer>
+
 <script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
-    });
-
-    const hiddenElements = document.querySelectorAll('.scroll-anim');
-    hiddenElements.forEach((el) => observer.observe(el));
+const roles=["Junior Full-Stack Web Developer","Computer Science Graduate","Python & Data Cleaning Enthusiast","WordPress Developer"];
+let r=0,c=0,del=false;const t=document.getElementById("typing");
+(function type(){const w=roles[r];t.textContent=w.slice(0,c);
+if(!del&&c<w.length){c++;setTimeout(type,70)}else if(!del){del=true;setTimeout(type,1400)}
+else if(c>0){c--;setTimeout(type,35)}else{del=false;r=(r+1)%roles.length;setTimeout(type,300)}})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("show");
+e.target.querySelectorAll("[data-n]").forEach(n=>{const to=+n.dataset.n;let v=0;const id=setInterval(()=>{v=Math.min(to,v+1);n.textContent=v;if(v>=to)clearInterval(id)},300)});
+io.unobserve(e.target)}),{threshold:.1});
+document.querySelectorAll(".reveal").forEach(s=>io.observe(s));
+document.getElementById("theme").onclick=()=>{const d=document.documentElement;const dark=getComputedStyle(d).getPropertyValue("--bg").trim()==="#0b1220";d.dataset.theme=dark?"light":"dark";try{localStorage.setItem("th",d.dataset.theme)}catch(e){}};
+try{const s=localStorage.getItem("th");if(s)document.documentElement.dataset.theme=s}catch(e){}
+document.getElementById("cf").onsubmit=e=>{e.preventDefault();
+const b=encodeURIComponent("Name: "+nm.value+"\nEmail: "+em.value+"\n\n"+ms.value);
+location.href="mailto:esharehman707@gmail.com?subject="+encodeURIComponent("Portfolio inquiry from "+nm.value)+"&body="+b};
 </script>
-
 </body>
 </html>
